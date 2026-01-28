@@ -3,7 +3,7 @@ import React from 'react'
 const DocumentDetailPage = () => {
   return (
     <div>
-      
+      cvbnm
     </div>
   )
 }
