@@ -5,10 +5,11 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import errorHandler from './middleware/errorHandler.js';
 import connectDB from './config/db.js'
 import authRoutes from './routes/authRoutes.js';
 import documentRoutes from "./routes/documentRoutes.js";
+import flashcardRoutes from "./routes/flashcardRoutes.js"
+import aiRoutes from './routes/aiRoutes.js';
 
 
  // ES6 module __dirname alternative
@@ -39,6 +40,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
  // Routes
 app.use('/api/auth',authRoutes);
 app.use('/api/documents', documentRoutes);
+app.use('/api/flashcards', flashcardRoutes);
+app.use('/api/ai', aiRoutes);
+
+
 
 // 404 handler
 app.use((req, res) => {

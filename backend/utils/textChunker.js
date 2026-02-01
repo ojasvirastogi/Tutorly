@@ -1,6 +1,11 @@
 /**
  * Split text into chunks for better AI processing
+ * @param {string} text - Full text to chunk
+ * @param {number} chunkSize - Target size per chunk (in words)
+ * @param {number} overlap - Number of words to overlap between chunks
+ * @returns {Array<{content: string, chunkIndex: number, pageNumber: number}>}
  */
+
 export const chunkText = (text, chunkSize = 500, overlap = 50) => {
   if (!text || text.trim().length === 0) {
     return [];
@@ -35,7 +40,7 @@ export const chunkText = (text, chunkSize = 500, overlap = 50) => {
         currentChunk = [];
         currentWordCount = 0;
       }
-
+// split large paragraph into smaller chunks
       for (let i = 0; i < words.length; i += chunkSize - overlap) {
         chunks.push({
           content: words.slice(i, i + chunkSize).join(' '),
@@ -47,7 +52,7 @@ export const chunkText = (text, chunkSize = 500, overlap = 50) => {
       continue;
     }
 
-    // Normal paragraph
+    // if adding this paragraph exceeds chunk size, finalize current chunk
     if (currentWordCount + wordCount > chunkSize && currentChunk.length > 0) {
       chunks.push({
         content: currentChunk.join('\n\n'),
@@ -55,6 +60,7 @@ export const chunkText = (text, chunkSize = 500, overlap = 50) => {
         pageNumber: 0,
       });
 
+      // start new chunk with overlap
       const overlapWords = currentChunk
         .join(' ')
         .split(/\s+/)
@@ -68,7 +74,7 @@ export const chunkText = (text, chunkSize = 500, overlap = 50) => {
     }
   }
 
-  // Push last chunk
+  // add last chunk
   if (currentChunk.length > 0) {
     chunks.push({
       content: currentChunk.join('\n\n'),
@@ -76,13 +82,27 @@ export const chunkText = (text, chunkSize = 500, overlap = 50) => {
       pageNumber: 0,
     });
   }
-
-  return chunks;
+// fallback if no chunks created ,split by words 
+  if (chunks.length === 0 && cleanedText.length > 0) {
+    const words = cleanedText.split(/\s+/);
+    for (let i = 0; i < words.length; i += chunkSize - overlap) {
+      chunks.push({
+        content: words.slice(i, i + chunkSize).join(' '),
+        chunkIndex: chunkIndex++,
+        pageNumber: 0,
+      });
+      if (i + chunkSize >= words.length) break;
+    }} return chunks;
 };
 
 /**
  * Find relevant chunks based on keyword matching
+ * @param {Array<Object>} chunks - Array of chunks
+ * @param {string} query - Search query
+ * @param {number} maxChunks - Maximum chunks to return
+ * @returns {Array<Object>}
  */
+
 export const findRelevantChunks = (chunks, query, maxChunks = 3) => {
   if (!chunks || !chunks.length || !query) return [];
 
