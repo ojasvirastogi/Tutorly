@@ -12,13 +12,13 @@ Secure login & signup using JWT
 
 Protected routes with authentication middleware
 
-Persistent login sessions with cookies
+Persistent login sessions using cookies
 
 📄 PDF Upload & Management
 
 Upload and store study documents securely
 
-File size tracking for efficient storage monitoring
+File size tracking for storage monitoring
 
 Organized document management system
 
@@ -58,7 +58,7 @@ Helps in deeper understanding
 
 Automatically generate flashcards from document content
 
-Flip animation for interactive study
+Interactive flip animation
 
 Quick revision mode
 
@@ -74,7 +74,7 @@ Instant question creation from document context
 
 Detailed score breakdown
 
-View correct answers and explanations
+View correct answers with explanations
 
 Performance tracking
 
@@ -100,7 +100,7 @@ Personalized learning focus
 
 Built with Tailwind CSS
 
-Modern and clean design
+Modern, clean design
 
 Fully mobile-friendly
 
@@ -131,7 +131,7 @@ JWT (JSON Web Token)
 
 Cookie-based session handling
 
-🔧 Installation Guide
+🔧 Installation
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -147,7 +147,7 @@ npm install
 
 3️⃣ Configure Environment Variables
 
-Create a .env file inside backend folder:
+Create a .env file inside the backend folder:
 
 PORT=5000
 MONGO_URI=
@@ -165,31 +165,3 @@ npm run dev
 Start Frontend
 cd project
 npm run dev
-
-📊 Project Highlights
-
-AI-driven learning automation
-
-Context-aware document interaction
-
-Interactive flashcards & quizzes
-
-Full-stack MERN architecture
-
-Production-ready authentication system
-
-🎯 Future Enhancements
-
-Role-based user access
-
-Collaborative document sharing
-
-Dark mode support
-
-AI study recommendations
-
-Cloud deployment
-
-📌 Author
-
-Developed by Ojasvi Rastogi
