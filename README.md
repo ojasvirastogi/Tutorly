@@ -1,167 +1,62 @@
-📚 AI Study Companion: Smart Document Learning Platform
-📌 Overview
+&lt;!-- AI Study Companion README --&gt;
+&lt;div align="center"&gt;
 
-AI Study Companion is a powerful AI-driven learning platform that allows users to upload study documents, interact with them intelligently, and generate personalized learning materials. It combines secure authentication, PDF management, AI-powered chat, flashcards, quizzes, and analytics into one seamless learning ecosystem.
+  &lt;!-- Animated Header Banner --&gt;
+  &lt;img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=AI%20Study%20Companion&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Smart%20Document%20Learning%20Platform&descAlignY=55&descSize=20" width="100%"/&gt;
 
-The platform enhances productivity by transforming static documents into interactive learning experiences using Google Gemini AI.
+  &lt;!-- Badges --&gt;
+  &lt;div style="margin: 20px 0;"&gt;
+    &lt;img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/&gt;
+    &lt;img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/&gt;
+    &lt;img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/&gt;
+    &lt;img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini"/&gt;
+    &lt;img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/&gt;
+  &lt;/div&gt;
 
-🚀 Features
-🔐 User Authentication
+  &lt;!-- Quick Links --&gt;
+  &lt;p&gt;
+    &lt;a href="#-features"&gt;Features&lt;/a&gt; •
+    &lt;a href="#-tech-stack"&gt;Tech Stack&lt;/a&gt; •
+    &lt;a href="#-installation"&gt;Installation&lt;/a&gt; •
+    &lt;a href="#-usage"&gt;Usage&lt;/a&gt; •
+    &lt;a href="#-api-reference"&gt;API&lt;/a&gt;
+  &lt;/p&gt;
 
-Secure login & signup using JWT
+  &lt;!-- Demo Preview --&gt;
+  &lt;img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGtxdHRiM2h2ZzR3eW1wZ2J6cW5wZ2J6cW5wZ2J6cW5wZ2J6Zw/l0HlNQ03J5JxX6lva/giphy.gif" width="600" style="border-radius: 12px; margin: 20px 0; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" alt="Platform Preview"/&gt;
 
-Protected routes with authentication middleware
+&lt;/div&gt;
 
-Persistent login sessions using cookies
+---
 
-📄 PDF Upload & Management
+## 📚 Overview
 
-Upload and store study documents securely
+**AI Study Companion** transforms static study materials into dynamic, interactive learning experiences. Powered by **Google Gemini AI**, this platform bridges the gap between passive reading and active learning through intelligent document analysis, contextual Q&A, and automated study material generation.
 
-File size tracking for storage monitoring
+&gt; 🎯 **Mission**: Turn every document into a personalized tutor that adapts to your learning style.
 
-Organized document management system
+---
 
-📖 Embedded PDF Viewer
+## ✨ Features
 
-View PDFs directly within the app
+### 🔐 Secure Authentication
+&lt;div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 15px; border-radius: 10px; margin: 10px 0;"&gt;
 
-No need to download files
+- **JWT-based** secure authentication
+- **HTTP-only cookies** for session persistence
+- Protected routes with middleware validation
+- Password encryption & security best practices
 
-Smooth in-app reading experience
+&lt;/div&gt;
 
-🤖 AI-Powered Chat
+### 📄 Intelligent Document Management
+| Feature | Description | Status |
+|---------|-------------|--------|
+| **PDF Upload** | Secure cloud storage with Cloudinary | ✅ Live |
+| **Embedded Viewer** | In-app PDF rendering (no downloads) | ✅ Live |
+| **Storage Analytics** | Real-time file size tracking | ✅ Live |
+| **Organized Library** | Tag-based document organization | 🚧 Beta |
 
-Ask context-aware questions about uploaded documents
+### 🤖 AI-Powered Learning Tools
 
-Intelligent responses powered by Google Gemini
-
-Understands document content before answering
-
-📝 AI Document Summary
-
-Generate concise summaries instantly
-
-One-click full document overview
-
-Saves time during revision
-
-📘 AI Concept Explainer
-
-Get detailed explanations of specific topics
-
-Simplifies complex concepts
-
-Helps in deeper understanding
-
-🗂️ Auto-Generated Flashcards
-
-Automatically generate flashcards from document content
-
-Interactive flip animation
-
-Quick revision mode
-
-🧠 AI Quiz Generator
-
-Generate multiple-choice quizzes
-
-Configurable question count
-
-Instant question creation from document context
-
-📊 Quiz Results & Analytics
-
-Detailed score breakdown
-
-View correct answers with explanations
-
-Performance tracking
-
-📈 Progress Tracking Dashboard
-
-Monitor total uploaded documents
-
-Track flashcards created
-
-View quiz attempts
-
-Recent activity feed
-
-⭐ Favorites System
-
-Mark important flashcards
-
-Quick review section
-
-Personalized learning focus
-
-📱 Responsive UI
-
-Built with Tailwind CSS
-
-Modern, clean design
-
-Fully mobile-friendly
-
-🛠️ Tech Stack
-Frontend
-
-React.js
-
-Tailwind CSS
-
-Zustand (State Management)
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-AI Integration
-
-Google Gemini API
-
-Authentication
-
-JWT (JSON Web Token)
-
-Cookie-based session handling
-
-🔧 Installation
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-2️⃣ Install Dependencies
-Backend
-cd backend
-npm install
-
-Frontend
-cd ../project
-npm install
-
-3️⃣ Configure Environment Variables
-
-Create a .env file inside the backend folder:
-
-PORT=5000
-MONGO_URI=
-JWT_SECRET=
-API_KEY=
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
-
-4️⃣ Start the Application
-Start Backend
-cd backend
-npm run dev
-
-Start Frontend
-cd project
-npm run dev
+#### 💬 Context-Aware Chat
