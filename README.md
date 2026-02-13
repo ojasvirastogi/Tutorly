@@ -1,26 +1,16 @@
-&lt;p align="center"&gt;
-  &lt;img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /&gt;
-  &lt;img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" /&gt;
-  &lt;img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /&gt;
-  &lt;img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gemini" /&gt;
-  &lt;img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /&gt;
-&lt;/p&gt;
 
-&lt;h1 align="center"&gt;📚 Tutorly&lt;/h1&gt;
 
-&lt;p align="center"&gt;
-  &lt;b&gt;AI-Powered Smart Document Learning Platform&lt;/b&gt;&lt;br&gt;
-  Transform static documents into interactive learning experiences
-&lt;/p&gt;
+<h1 align="center" style="font-size:23px;">
+  📚 Tutorly
+</h1>
 
-&lt;p align="center"&gt;
-  &lt;a href="#features"&gt;Features&lt;/a&gt; •
-  &lt;a href="#tech-stack"&gt;Tech Stack&lt;/a&gt; •
-  &lt;a href="#installation"&gt;Installation&lt;/a&gt; •
-  &lt;a href="#author"&gt;Author&lt;/a&gt;
-&lt;/p&gt;
+<p align="center">
+  An AI-powered smart document learning platform that transforms static study materials 
+  into interactive experiences including summaries, quizzes, flashcards, and context-aware chat.
+</p>
 
----
+<hr/>
+
 
 ## 📌 Overview
 
