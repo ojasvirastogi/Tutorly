@@ -1,33 +1,87 @@
-&lt;!-- AI Study Companion README --&gt;
-&lt;div align="center"&gt;
+## 📌 Overview
 
-  &lt;!-- Animated Header Banner --&gt;
-  &lt;img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=AI%20Study%20Companion&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Smart%20Document%20Learning%20Platform&descAlignY=55&descSize=20" width="100%"/&gt;
+**AI Study Companion** is an intelligent learning platform that revolutionizes how students interact with study materials. Upload your PDF documents and unlock a suite of AI-powered tools including contextual chat, auto-generated flashcards, smart quizzes, and comprehensive analytics.
 
-  &lt;!-- Badges --&gt;
-  &lt;div style="margin: 20px 0;"&gt;
-    &lt;img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/&gt;
-    &lt;img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/&gt;
-    &lt;img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/&gt;
-    &lt;img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini"/&gt;
-    &lt;img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Quick Links --&gt;
-  &lt;p&gt;
-    &lt;a href="#-features"&gt;Features&lt;/a&gt; •
-    &lt;a href="#-tech-stack"&gt;Tech Stack&lt;/a&gt; •
-    &lt;a href="#-installation"&gt;Installation&lt;/a&gt; •
-    &lt;a href="#-usage"&gt;Usage&lt;/a&gt; •
-    &lt;a href="#-api-reference"&gt;API&lt;/a&gt;
-  &lt;/p&gt;
-
-  &lt;!-- Demo Preview --&gt;
-  &lt;img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGtxdHRiM2h2ZzR3eW1wZ2J6cW5wZ2J6cW5wZ2J6cW5wZ2J6Zw/l0HlNQ03J5JxX6lva/giphy.gif" width="600" style="border-radius: 12px; margin: 20px 0; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" alt="Platform Preview"/&gt;
-
-&lt;/div&gt;
+Powered by **Google Gemini AI**, the platform understands your documents deeply to provide personalized learning experiences that adapt to your needs.
 
 ---
+
+## ✨ Features
+
+### 🔐 Secure Authentication
+- JWT-based authentication with secure httpOnly cookies
+- Protected routes with middleware validation
+- Persistent login sessions
+
+### 📄 Document Management
+- Secure PDF upload and storage via Cloudinary
+- In-app PDF viewer with smooth navigation
+- File size tracking and storage monitoring
+
+### 🤖 AI-Powered Learning Tools
+| Feature | Description |
+|---------|-------------|
+| **Smart Chat** | Ask context-aware questions about your documents |
+| **Auto Summarization** | Generate concise document summaries instantly |
+| **Concept Explainer** | Get detailed explanations of complex topics |
+| **Flashcard Generator** | Auto-create interactive flashcards with flip animations |
+| **Quiz Builder** | Generate MCQs with configurable question counts |
+
+### 📊 Analytics & Tracking
+- Progress dashboard with document/flashcard/quiz metrics
+- Detailed quiz results with explanations
+- Activity feed and performance analytics
+- Favorites system for quick review
+
+### 📱 Modern UI/UX
+- Fully responsive design built with Tailwind CSS
+- Clean, intuitive interface optimized for all devices
+- Dark/Light mode support
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js** - Component-based UI architecture
+- **Tailwind CSS** - Utility-first styling
+- **Zustand** - Lightweight state management
+
+### Backend
+- **Node.js** & **Express.js** - RESTful API server
+- **MongoDB** - NoSQL database for document storage
+- **Mongoose** - Object data modeling
+
+### AI & Cloud
+- **Google Gemini API** - Advanced language model integration
+- **Cloudinary** - Secure cloud storage for PDFs
+- **JWT** - Secure authentication tokens
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB Atlas account or local MongoDB instance
+- Google Gemini API key
+- Cloudinary account
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/ai-study-companion.git
+cd ai-study-companion
+2. Install Dependencies
+Backend
+bash
+Copy
+cd backend
+npm install
+Frontend
+bash
+Copy
+cd ../project
+npm install
 
 ## 📚 Overview
 
