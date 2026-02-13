@@ -1,61 +1,80 @@
+&lt;p align="center"&gt;
+  &lt;img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /&gt;
+  &lt;img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" /&gt;
+  &lt;img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /&gt;
+  &lt;img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gemini" /&gt;
+  &lt;img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /&gt;
+&lt;/p&gt;
+
+&lt;h1 align="center"&gt;📚 Tutorly&lt;/h1&gt;
+
+&lt;p align="center"&gt;
+  &lt;b&gt;AI-Powered Smart Document Learning Platform&lt;/b&gt;&lt;br&gt;
+  Transform static documents into interactive learning experiences
+&lt;/p&gt;
+
+&lt;p align="center"&gt;
+  &lt;a href="#features"&gt;Features&lt;/a&gt; •
+  &lt;a href="#tech-stack"&gt;Tech Stack&lt;/a&gt; •
+  &lt;a href="#installation"&gt;Installation&lt;/a&gt; •
+  &lt;a href="#author"&gt;Author&lt;/a&gt;
+&lt;/p&gt;
+
+---
+
 ## 📌 Overview
 
-**AI Study Companion** is an intelligent learning platform that revolutionizes how students interact with study materials. Upload your PDF documents and unlock a suite of AI-powered tools including contextual chat, auto-generated flashcards, smart quizzes, and comprehensive analytics.
+**Tutorly** is an intelligent AI-driven learning platform that revolutionizes how students interact with study materials. Upload your PDF documents and unlock a suite of AI-powered tools including contextual chat, auto-generated flashcards, smart quizzes, and comprehensive analytics.
 
-Powered by **Google Gemini AI**, the platform understands your documents deeply to provide personalized learning experiences that adapt to your needs.
+Powered by **Google Gemini AI**, Tutorly understands your documents deeply to provide personalized learning experiences that adapt to your study needs.
 
 ---
 
 ## ✨ Features
 
-### 🔐 Secure Authentication
-- JWT-based authentication with secure httpOnly cookies
-- Protected routes with middleware validation
-- Persistent login sessions
+### 🔐 User Authentication
+- Secure login & signup using JWT
+- Protected routes with authentication middleware
+- Persistent login sessions using httpOnly cookies
 
-### 📄 Document Management
-- Secure PDF upload and storage via Cloudinary
-- In-app PDF viewer with smooth navigation
-- File size tracking and storage monitoring
+### 📄 PDF Upload & Management
+- Upload and store study documents securely via Cloudinary
+- File size tracking for storage monitoring
+- Organized document management system
 
-### 🤖 AI-Powered Learning Tools
+### 📖 Embedded PDF Viewer
+- View PDFs directly within the app without downloading
+- Smooth in-app reading experience with page navigation
+
+### 🤖 AI-Powered Tools
 | Feature | Description |
 |---------|-------------|
-| **Smart Chat** | Ask context-aware questions about your documents |
-| **Auto Summarization** | Generate concise document summaries instantly |
+| **Smart Chat** | Ask context-aware questions about uploaded documents |
+| **AI Summary** | Generate concise one-click document overviews |
 | **Concept Explainer** | Get detailed explanations of complex topics |
 | **Flashcard Generator** | Auto-create interactive flashcards with flip animations |
-| **Quiz Builder** | Generate MCQs with configurable question counts |
+| **Quiz Builder** | Generate configurable multiple-choice quizzes from document content |
 
-### 📊 Analytics & Tracking
-- Progress dashboard with document/flashcard/quiz metrics
-- Detailed quiz results with explanations
-- Activity feed and performance analytics
-- Favorites system for quick review
+### 📊 Analytics & Progress Tracking
+- Detailed quiz results with score breakdown and explanations
+- Progress dashboard monitoring documents, flashcards, and quiz attempts
+- Recent activity feed
+- Favorites system for marking important flashcards
 
-### 📱 Modern UI/UX
-- Fully responsive design built with Tailwind CSS
-- Clean, intuitive interface optimized for all devices
-- Dark/Light mode support
+### 📱 Responsive Design
+- Built with Tailwind CSS for modern, clean UI
+- Fully mobile-friendly and responsive across all devices
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React.js** - Component-based UI architecture
-- **Tailwind CSS** - Utility-first styling
-- **Zustand** - Lightweight state management
-
-### Backend
-- **Node.js** & **Express.js** - RESTful API server
-- **MongoDB** - NoSQL database for document storage
-- **Mongoose** - Object data modeling
-
-### AI & Cloud
-- **Google Gemini API** - Advanced language model integration
-- **Cloudinary** - Secure cloud storage for PDFs
-- **JWT** - Secure authentication tokens
+**Frontend:** React.js, Tailwind CSS, Zustand (State Management)  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB  
+**AI Integration:** Google Gemini API  
+**Authentication:** JWT + Cookie-based sessions  
+**Cloud Storage:** Cloudinary  
 
 ---
 
@@ -67,11 +86,12 @@ Powered by **Google Gemini AI**, the platform understands your documents deeply 
 - Google Gemini API key
 - Cloudinary account
 
-### 1. Clone the Repository
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-study-companion.git
-cd ai-study-companion
-2. Install Dependencies
+git clone https://github.com/ojasvirastogi/Tutorly.git
+cd Tutorly
+
+2️⃣ Install Dependencies
 Backend
 bash
 Copy
@@ -82,35 +102,25 @@ bash
 Copy
 cd ../project
 npm install
-
-## 📚 Overview
-
-**AI Study Companion** transforms static study materials into dynamic, interactive learning experiences. Powered by **Google Gemini AI**, this platform bridges the gap between passive reading and active learning through intelligent document analysis, contextual Q&A, and automated study material generation.
-
-&gt; 🎯 **Mission**: Turn every document into a personalized tutor that adapts to your learning style.
-
----
-
-## ✨ Features
-
-### 🔐 Secure Authentication
-&lt;div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 15px; border-radius: 10px; margin: 10px 0;"&gt;
-
-- **JWT-based** secure authentication
-- **HTTP-only cookies** for session persistence
-- Protected routes with middleware validation
-- Password encryption & security best practices
-
-&lt;/div&gt;
-
-### 📄 Intelligent Document Management
-| Feature | Description | Status |
-|---------|-------------|--------|
-| **PDF Upload** | Secure cloud storage with Cloudinary | ✅ Live |
-| **Embedded Viewer** | In-app PDF rendering (no downloads) | ✅ Live |
-| **Storage Analytics** | Real-time file size tracking | ✅ Live |
-| **Organized Library** | Tag-based document organization | 🚧 Beta |
-
-### 🤖 AI-Powered Learning Tools
-
-#### 💬 Context-Aware Chat
+3️⃣ Configure Environment Variables
+Create a .env file in the backend directory:
+env
+Copy
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+API_KEY=your_google_gemini_api_key
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+4️⃣ Start the Application
+Start Backend
+bash
+Copy
+cd backend
+npm run dev
+Start Frontend
+bash
+Copy
+cd project
+npm run dev
