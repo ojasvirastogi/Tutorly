@@ -1,18 +1,13 @@
 
 
-<h1 align="center" style="font-size:23px;">
+<h1 align="center" style="font-size:26px;">
   📚 Tutorly
 </h1>
 
-<p align="center">
-  An AI-powered smart document learning platform that transforms static study materials 
-  into interactive experiences including summaries, quizzes, flashcards, and context-aware chat.
-</p>
+## <h1 align="center" style="font-size:20px;">
+📌 Overview
+</h1>
 
-<hr/>
-
-
-## 📌 Overview
 
 **Tutorly** is an intelligent AI-driven learning platform that revolutionizes how students interact with study materials. Upload your PDF documents and unlock a suite of AI-powered tools including contextual chat, auto-generated flashcards, smart quizzes, and comprehensive analytics.
 
